@@ -1,22 +1,3 @@
-//normal function in JavaScript
-function sayHi(){
-  console.log('Hello');
-}
+var counter1 = require('./count');
 
-sayHi();
-
-//function expression
-var sayBye = function(){
-  console.log('Bye');
-}
-
-sayBye();
-
-
-//pass function to another function
-function callFunction(fun){
-  fun();
-}
-
-
-callFunction(sayBye);
+console.log(counter1(['shawn', 'roma', 'nimal', 'roy']));
