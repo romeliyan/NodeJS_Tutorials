@@ -1,9 +1,11 @@
-//reading and writing files
-//need a module - FS
+//delete files
 
-var fs = require('fs'); //generally set the variable name equal to module name
+//****   synchronous way  ******
 
-var readMe = fs.readFileSync('readme.txt', 'utf8'); //syncronous - read the whole file then execute the bellow code
-//console.log(readMe);
+//  var fs = require('fs');
+//  fs.unlinkSync('app2.js');
 
-fs.writeFileSync('writeme.txt', readMe);
+//****   asynchronous way *******
+
+var fs = require('fs');
+fs.unlink('hello.txt', function(){});
