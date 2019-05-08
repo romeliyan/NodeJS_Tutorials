@@ -1,0 +1,5 @@
+Response = response data + response header
+
+response header
+  1. Content Type - plain text/JSON/html
+  2. Status - 200 / 404
