@@ -1,0 +1,17 @@
+//Buffers
+
+temporary storage spot for a chunk of data that is being transferred from one place to another
+
+DATA ---- [|||||]------> data passed on
+           buffer
+
+
+//Streams
+
+_______________________________________________________
+|-|-| ---> [|||||] ----->  [   ]  ----->  [    ]  --->
+            buffer
+_______________________________________________________
+                      Stream
+
+increase performance
